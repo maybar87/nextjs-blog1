@@ -11,7 +11,7 @@ export default function index({data}) {
              data.map(({id, title, body})=>(
                  <div key={id} >
                     <h3> <Link href={`/blog/${id}`} >
-                            {id}  {title}
+                            {id}, {title}
                         </Link>
                       </h3>
                     <p> {body} </p>

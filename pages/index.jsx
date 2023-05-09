@@ -6,7 +6,7 @@ import utilStyles from '../styles/Utils.module.css';
 
 export default function Home() {
   return (
-    <Layout title='Home -- Nextjs' description='Descripcion del home' home  > 
+    <Layout title="'Home -- Nextjs'" description="'Descripcion del home'" home  > 
     <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>

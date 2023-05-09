@@ -6,8 +6,8 @@ export default function primerPost( { data } ) {
     return (
         <Layout>
            
-            <h1> {data.id} aqui el error 2 {data.title} </h1>
-            <p> {data.body} sigue </p>
+            <h1> {data.id}  {data.title} </h1>
+            <p> {data.body}  </p>
                              
         </Layout>
     );
@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps ({params}) {
     try {
-        const res = await fetch ('https://jsonplaceholder.typicode.com/posts' + params.id );
+        const res = await fetch ('https://jsonplaceholder.typicode.com/posts/' + params.id );
         const data = await res.json()
         return{
             props:{
